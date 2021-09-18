@@ -1,0 +1,16 @@
+<%- include('header'); -%>
+      <div class="box">
+      <% for(let i=0; i<list.length;i++ ){ %>
+        <div class="item">
+            <input type="checkbox"> 
+            <p ><%= list[i] %></p>
+        </div>
+      <% } %>
+     </div>
+    <form action="/" method="POST">
+      <input type="text" name="listitem" placeholder="enter here" autocomplete="off" />
+      <button type="submit" name="submit" value=<%= submitPage %> >+</button>
+    </form>
+ <%- include('footer'); -%>
+   </body>
+</html>
